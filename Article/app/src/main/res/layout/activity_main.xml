@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/article_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="439dp"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/article_image" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Jetpack Compose tutorial"
+                android:textColor="@color/article_text"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="Jetpack Compose is a modern toolkit developed by Google for building Android user interfaces. It allows developers to create beautiful and interactive applications using Kotlin with less code.  One of its main advantages is its declarative approach, which automatically updates the user interface when application data changes. This makes development faster and easier.  Jetpack Compose provides many useful components, such as buttons, images, text fields, and layouts. It also supports Material Design, animations, and different screen sizes.  Additionally, developers can preview their designs directly in Android Studio without running the entire application.  Overall, Jetpack Compose is a powerful technology that simplifies Android development and helps programmers build modern, responsive, and user-friendly applications."
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
